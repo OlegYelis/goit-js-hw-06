@@ -1,7 +1,7 @@
 const validationInputEl = document.querySelector('#validation-input');
 
 function validationHandler(event) {
-  if (event.currentTarget.value.length == validationInputEl.dataset.length) {
+  if (event.currentTarget.value.trim().length == validationInputEl.dataset.length) {
     if (validationInputEl.classList.contains('invalid')) {
       validationInputEl.classList.remove('invalid');
       validationInputEl.classList.add('valid');
